@@ -1,4 +1,4 @@
-import $ from 'jquery';
+import $ from 'jquery';//导入默认导出，并将其命名为$
 import '../styles/normalize.scss';
 import '../styles/radio.scss';
 import '../styles/style.scss';
