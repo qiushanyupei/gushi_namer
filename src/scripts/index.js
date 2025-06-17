@@ -16,8 +16,8 @@ function genRadio(books) {
     <div class="inputGroup">
         <input id="${b.value}" name="book" type="radio" value="${b.value}" ${b.checked ? 'checked' : ''}  />
         <label for="${b.value}">${b.name}</label>
-      </div>`);
-  const html = arr.join('');
+      </div>`);//原本是分隔的html字符串数组
+  const html = arr.join('');//连接后变成完整html字符串，可以直接插入DOM中
   return html;
 }
 
