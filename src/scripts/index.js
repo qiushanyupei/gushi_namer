@@ -137,7 +137,7 @@ function test() {
   logStr(n.formatStr(inputs[1]));
 }
 
-$(document).ready(main);
+$(document).ready(main);//jquery加载好后执行main函数
 
 if (debugMode) {
   test();
