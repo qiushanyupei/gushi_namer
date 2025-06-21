@@ -79,7 +79,7 @@ function createRadioGroup() {
   if (debugMode) {
     books.push({ value: 'test', name: '测试', checked: true });
   }
-  sel('.book-selector').innerHTML = genRadio(books);
+  sel('.book-selector').innerHTML = genRadio(books);//sel前面定义过了，使用query选中html文档中对应的组件
 }
 
 function loadBook(namer) {
