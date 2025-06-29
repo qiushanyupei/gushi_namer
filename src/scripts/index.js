@@ -83,7 +83,7 @@ function createRadioGroup() {
 }
 
 function loadBook(namer) {
-  const book = $("input[name='book']:checked").val();//[]是基本属性选择器，选择input中对应的属性；冒号后面的属于基本状态选择器
+  const book = $("input[name='book']:checked").val();//[]是基本属性选择器，选择input中对应的属性；冒号后面的属于基本状态选择器；.val会返回对应状态组件的value属性
   setLoading();
   namer.loadBook(book, () => {
     clearLoading();
